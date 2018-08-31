@@ -1,6 +1,7 @@
 import media
 import fresh_tomatoes
 
+## Create instances
 back_to_the_future = media.Movie("Back To The Future",
             "https://resizing.flixster.com/9irKiQGCh4Z6-GShsFgreSGrhi4=/206x305/v1.bTsxMTE3Mzg1MjtqOzE3ODU5OzEyMDA7ODAwOzEyMDA",
             "https://www.youtube.com/watch?v=qvsgGtivCgs")
@@ -25,6 +26,8 @@ carandiru = media.Movie("Carandiru",
             "https://resizing.flixster.com/jqrIz0PE6jlwvN5xtbd6gX1PUU8=/206x305/v1.bTsxMTQ1MzQ4NDtqOzE3ODYyOzEyMDA7MjcwMDszNjAw",
             "https://www.youtube.com/watch?v=BdLvrNz9tUk")
 
+## Create matriz to display the movies
 movies = [back_to_the_future, seven_years_in_tibet, matrix, godfather, shutter_island, carandiru]
 
+## Call function to create the website
 fresh_tomatoes.open_movies_page(movies)
